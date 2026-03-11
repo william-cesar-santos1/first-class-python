@@ -3,6 +3,8 @@ print('Olá, mundo!')
 # Variáveis
 # Tipo de dado: inteiro
 idade = 36
+tipo_idade = type(idade)
+print('O tipo de dado da variável idade é:', tipo_idade)
 # Tipo de dado: float
 salario = 1545.15
 # Tipo de dado: string
@@ -16,3 +18,21 @@ As variáveis são usadas para armazenar informações que podem ser usadas post
 '''
 
 print('Meu nome é:', nome, 'e tenho a idade:', idade, sep=' ', end='\n')
+
+#nome = input('Informe o seu nome: ')
+
+'''
+Operações aritméticas
+Soma: +
+Subtração: -
+Multiplicação: *
+Divisão: /
+Exponenciação: **
+Módulo/Resto da divisão: %
+'''
+result = 5 % 2
+print('O resultado do módulo é:', result)
+
+numero_um = input('Informe o primeiro número: ')
+numero_dois = input('Informe o segundo número: ')
+print('A soma dos números é:', int(numero_um) + int(numero_dois))
