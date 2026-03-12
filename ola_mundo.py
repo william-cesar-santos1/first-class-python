@@ -62,3 +62,50 @@ Operações lógicas
 
 comparacao = 5 != 2
 print('O resultado da comparação é:', comparacao)
+
+'''
+O uso da palavra not no inicio da expressão logica, 
+inverte o resultado da comparação.
+not 5 != 2 -> False
+not 5 == 2 -> True
+not 5 > 2 -> False
+not 5 < 2 -> True
+'''
+
+'''
+Conjunção lógica: and
+(5 > 2) [true] and (3 > 1) [true] -> True
+(5 > 2) [true] and (3 < 1) [false] -> False
+(5 < 2) [false] and (3 > 1) [true] -> False
+(5 < 2) [false] and (3 < 1) [false] -> False
+(5 > 2) [true] and (3 > 1) [true] and (2 == 2) [true] -> True
+(5 > 2) [true] and (3 > 1) [true] and (2 == 3) [false] -> False
+
+Tabela da verdade do operador and:
+A     B     A and B
+True  True  True
+True  False False
+False True  False
+False False False
+'''
+
+
+'''
+Disjunção lógica: or
+(5 > 2) [true] or (3 > 1) [true] -> True
+(5 > 2) [true] or (3 < 1) [false] -> True
+(5 < 2) [false] or (3 > 1) [true] -> True
+(5 < 2) [false] or (3 < 1) [false] -> False
+(5 > 2) [true] or (3 > 1) [true] or (2 == 2) [true] -> True
+(5 > 2) [true] or (3 > 1) [true] or (2 == 3) [false] -> True
+(5 > 2) [true] or (3 < 1) [false] or (2 == 3) [false] -> True
+(5 < 2) [false] or (3 > 1) [true] or (2 == 3) [false] -> True
+(5 < 2) [false] or (3 < 1) [false] or (2 == 3) [false] -> False
+
+Tabela da verdade do operador or:
+A     B     A or B
+True  True  True
+True  False True
+False True  True
+False False False
+'''
