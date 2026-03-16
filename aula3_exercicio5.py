@@ -15,3 +15,11 @@ nota = float(input('Informe a nota do aluno: '))
 frequencia_assistida = int(input('Informe a quantidade de aulas assistidas: '))
 frequencia_total = int(input('Informe a quantidade total de aulas: '))
 frequencia = (frequencia_assistida / frequencia_total) * 100
+
+if nota < 6 or frequencia < 85:
+    print('O aluno está reprovado.')
+else:
+    if nota >= 8:
+        print('O aluno foi aprovado.')
+    else:
+        print('O aluno está de recuperação.')
