@@ -12,5 +12,8 @@ nota = int(input("Informe a nota do aluno: "))
 frequencia = int(input("Informe a frequência do aluno (quantidade de aulas assistidas): "))
 total_aulas = int(input("Informe o total de aulas: "))
 frequencia_percentual = (frequencia / total_aulas) * 100
-aprovado = (nota >= 8) and (frequencia_percentual >= 85)
-print("O aluno foi aprovado:", aprovado)
+if nota >= 8 and frequencia_percentual >= 85:
+  print("O aluno foi aprovado!!!")
+else:
+  print("O aluno não foi aprovado!!!")
+print("Fim!!!")

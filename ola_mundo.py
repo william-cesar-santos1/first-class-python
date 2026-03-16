@@ -109,3 +109,50 @@ True  False True
 False True  True
 False False False
 '''
+
+'''
+Conjunção e disjunção lógica
+(5 > 2) [true] and (3 > 1) [true] or (2 == 3) [false] -> True
+(5 > 2) [true] and (3 < 1) [false] or (2 == 3) [false] -> False
+(5 < 2) [false] and (3 > 1) [true] or (2 == 3) [false] -> False
+(5 < 2) [false] and (3 < 1) [false] or (2 == 3) [false] -> False
+(5 > 2) [true] and ((3 > 4) [false] or (2 == 2) [true]) -> True
+
+(5 > 2) and (3 > 4 or 2 == 2)
+(true ) and (false or true)
+(true ) and (true)
+true
+'''
+
+'''
+truthy and falsy
+Em Python, existem valores que são considerados verdadeiros (truthy) e valores que são considerados falsos (falsy) em contextos booleanos. 
+Valores falsy incluem: False, None, 0, 0.0, 0j, '', [], (), {}, set(), range(0)
+Todos os outros valores são considerados truthy.
+
+inteiro = 0 (falsy)
+flutuante = 0.0 (falsy)
+string_vazia = '' (falsy)
+lista_vazia = [] (falsy)
+tupla_vazia = () (falsy)
+dicionario_vazio = {} (falsy)
+conjunto_vazio = set() (falsy)
+range_vazio = range(0) (falsy)
+
+inteiro = 1 (truthy)
+inteiro = -1 (truthy)
+flutuante = 0.1 (truthy)
+string = 'Olá' (truthy) 
+lista = [1, 2, 3] (truthy)
+tupla = (1, 2, 3) (truthy)
+dicionario = {'chave': 'valor'} (truthy)
+conjunto = {1, 2, 3} (truthy)
+range = range(1) (truthy)
+'''
+
+'''
+Condições / controle do fluxo de execução
+if (se)
+elif (senão se)
+else (senão)
+'''
