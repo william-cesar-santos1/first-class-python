@@ -10,3 +10,7 @@ Caso o aluno tenha nota inferior a 8. Porém acima de 6 e com
 Caso a nota do aluno seja inferior a 6, ele esta reprovado, 
   independente da frequência.
 '''
+nota = float(input('Informe a nota do aluno: '))
+frequencia_assistida = int(input('Informe a quantidade de aulas assistidas: '))
+frequencia_total = int(input('Informe a quantidade total de aulas: '))
+frequencia = (frequencia_assistida / frequencia_total) * 100
