@@ -8,3 +8,9 @@ Para que o aluno seja aprovado, ele precisa ter uma nota
 No final da execução, imprima se o aluno foi aprovado: [True or False]
 Conjunção lógica (and).
 '''
+nota = int(input("Informe a nota do aluno: "))
+frequencia = int(input("Informe a frequência do aluno (quantidade de aulas assistidas): "))
+total_aulas = int(input("Informe o total de aulas: "))
+frequencia_percentual = (frequencia / total_aulas) * 100
+aprovado = (nota >= 8) and (frequencia_percentual >= 85)
+print("O aluno foi aprovado:", aprovado)
