@@ -156,3 +156,10 @@ if (se)
 elif (senão se)
 else (senão)
 '''
+
+'''
+Loops / laços de repetição
+while boolean:
+    executar a instrução enquanto a condição for verdadeira
+condição false -> não executa o bloco de código
+'''

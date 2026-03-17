@@ -18,8 +18,7 @@ frequencia = (frequencia_assistida / frequencia_total) * 100
 
 if nota < 6 or frequencia < 85:
     print('O aluno está reprovado.')
+elif nota >= 8:
+    print('O aluno foi aprovado.')
 else:
-    if nota >= 8:
-        print('O aluno foi aprovado.')
-    else:
-        print('O aluno está de recuperação.')
+    print('O aluno está de recuperação.')
