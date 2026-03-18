@@ -28,3 +28,9 @@ matrix = [
 linha = int(input('Digite o número da linha: '))
 coluna = int(input('Digite o número da coluna: '))
 print(matrix[linha][coluna])
+
+print('Percorrendo a matriz completa')
+for linha in matrix:
+    for coluna in linha:
+        print(coluna, end=', ')
+    print()
