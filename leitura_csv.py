@@ -13,7 +13,8 @@ O retorno da leitura do csv é uma lista de listas, onde cada linha do arquivo c
 def ler_csv(caminho_do_arquivo_csv):
     with open(caminho_do_arquivo_csv, mode='r', encoding='utf-8') as arquivo:
         linhas = csv.reader(arquivo)
-        for linha in linhas:
-            print(linha)
+        conteudo = list(linhas)
+    return conteudo
 
-ler_csv('/Users/william/transacoes_bancarias.csv')
+conteudo = ler_csv('/Users/william/transacoes_bancarias.csv')
+print(conteudo)
