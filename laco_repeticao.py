@@ -22,3 +22,9 @@ while idade < 0 or idade > 120:
     print('Idade inválida. Tente novamente.')
     idade = int(input('Digite a idade: '))
 print('Idade válida. Fim do loop.')
+
+for contador in range(1, 21):
+    if (contador % 2 != 0):
+        continue
+    print(f'contador é par: {contador}', end='\n')
+print('Fim do loop for.')
