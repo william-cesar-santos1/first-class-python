@@ -16,3 +16,11 @@ Exemplo: Se o usuário informar o número 5, o resultado deve ser:
 Resultado:
 [1, 4, 16, 27, 125]
 '''
+limite = int(input('Digite um número: '))
+numeros = list(range(1, limite + 1))
+for index, numero in enumerate(numeros):
+    if numero % 2 == 0:
+        numeros[index] = numero ** 2
+    else:
+        numeros[index] = numero ** 3
+print(sorted(numeros))

@@ -7,3 +7,9 @@ O nome "William" possui 3 vogais.
 Precisa utilizar for para resolver.
 for letra in nome:
 '''
+nome = input('Digite seu nome: ')
+contador_vogais = 0
+for letra in nome:
+    if letra.lower() in ['a', 'e', 'i', 'o', 'u']: #'aeiou'
+        contador_vogais += 1
+print(f'O nome "{nome}" possui {contador_vogais} vogais.')
