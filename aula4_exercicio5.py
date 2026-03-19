@@ -22,3 +22,11 @@ Desafios
  - Ticket médio. Calcule o ticket médio total.
  - Pedido mais caro.
 '''
+vendas = [
+    ["Notebook", 3500, 2],
+    ["Mouse", 80, 10],
+    ["Teclado", 150, 5],
+    ["Monitor", 900, 3],
+    ["Mouse", 80, 2],
+    ["Notebook", 3500, 1]
+]
