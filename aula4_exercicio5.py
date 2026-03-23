@@ -23,9 +23,9 @@ Desafios
  - Pedido mais caro.
 '''
 vendas = [
-    ["Notebook", 3500, 2],
     ["Mouse", 80, 10],
     ["Teclado", 150, 5],
+    ["Notebook", 3500, 2],
     ["Monitor", 900, 3],
     ["Mouse", 80, 2],
     ["Notebook", 3500, 1]
@@ -45,6 +45,7 @@ for venda in vendas:
     # Aqui multiplica novamente o preço unitário pela quantidade vendida para comparar o valor total da venda com o valor do pedido mais caro
     valor_pedido_mais_caro = pedido_mais_caro[1] * pedido_mais_caro[2]
     if valor_total_venda > valor_pedido_mais_caro:
+        print('Novo pedido mais caro encontrado:', nome_produto, '- R$', valor_total_venda)
         pedido_mais_caro = venda
 
 ticket_medio = faturamento_total / len(vendas)
