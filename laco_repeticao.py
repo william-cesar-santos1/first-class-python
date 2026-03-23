@@ -1,3 +1,9 @@
+'''
+Laço de repetição: while
+while booleano:
+    executar a instrução enquanto a condição for verdadeira
+condição false -> não executa o bloco de código
+'''
 numero = int(input('Digite um número: '))
 contador = 0
 while contador < numero:

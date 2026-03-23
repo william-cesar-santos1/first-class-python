@@ -30,3 +30,25 @@ vendas = [
     ["Mouse", 80, 2],
     ["Notebook", 3500, 1]
 ]
+
+faturamento_total = 0
+pedido_mais_caro = vendas[0]
+
+for venda in vendas:
+    nome_produto = venda[0]       # nome do produto vendido
+    preco_unitario = venda[1]     # preço unitário do produto
+    quantidade_vendida = venda[2] # quantidade vendida
+    valor_total_venda = preco_unitario * quantidade_vendida  # valor total da venda
+
+    faturamento_total += valor_total_venda
+
+    # Aqui multiplica novamente o preço unitário pela quantidade vendida para comparar o valor total da venda com o valor do pedido mais caro
+    valor_pedido_mais_caro = pedido_mais_caro[1] * pedido_mais_caro[2]
+    if valor_total_venda > valor_pedido_mais_caro:
+        pedido_mais_caro = venda
+
+ticket_medio = faturamento_total / len(vendas)
+
+print('Faturamento total: R$', faturamento_total)
+print('Ticket médio: R$', ticket_medio)
+print('Pedido mais caro:', pedido_mais_caro[0], '- R$', pedido_mais_caro[1] * pedido_mais_caro[2])
