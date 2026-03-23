@@ -9,3 +9,10 @@ for nome in nomes:
         combinacao = f'{nome} {sobrenome}'
         print(combinacao)
 '''
+
+tabuada = [f'{numero_um} x {numero_dois} = {numero_um * numero_dois}' 
+           for numero_um in range(1, 11) 
+           for numero_dois in range(1, 11)]
+
+for linha in tabuada:
+    print(linha)
