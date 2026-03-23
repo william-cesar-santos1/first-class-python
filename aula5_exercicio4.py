@@ -9,3 +9,10 @@ Exemplo de resultado: ['1 impar', '5 impar', '8 par', '6 par', '15 impar',
 DESAFIO, NÃO EXPLIQUEI COMO FAZER ISSO AINDA, TENTE RESOLVER USANDO COMPREENSÃO DE LISTAS
 '''
 numeros = [1, 5, 8, 6, 15, 20, 34, 30, 20, 19, 11]
+pares_e_impares = [f'{numero} par' if numero % 2 == 0 else f'{numero} impar' 
+                   for numero in numeros]
+print(pares_e_impares)
+
+'''
+# nova_lista = [expressão/condição for item in sequência]
+'''
