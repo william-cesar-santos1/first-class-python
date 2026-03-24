@@ -2,6 +2,7 @@
 Agrupe os produtos por categoria.
     - Categoria: Eletrônicos, [Notebook, Monitor]
     - Categoria: Periféricos, [Teclado, Mouse]
+    ...
 '''
 produtos = [
     {'categoria': 'Eletrônicos', 'nome': 'Notebook'},
@@ -14,3 +15,4 @@ produtos = [
     {'categoria': 'Veículos', 'nome': 'Gol'},
     {'categoria': 'Alimento', 'nome': 'Macarrão'}
 ]
+produtos_agrupados = {}
