@@ -3,9 +3,15 @@ Dado a lista de alunos abaixo. Agrupe os alunos
   aprovados, em recuperação e reprovados, utilizando um dicionário.
   
 Regra de aprovação:
-  nota > 80% e frequência > 85% -> Aprovado
-  nota > 60% e frequência > 85% -> Recuperação
-  nota < 60% ou frequência < 85% -> Reprovado
+  nota >= 80 e frequência >= 85% -> Aprovado
+  60 <= nota < 80 e frequência >= 85% -> Recuperação
+  nota < 60 ou frequência < 85% -> Reprovado
+  
+{
+  'aprovados': ['Alice', 'David', 'Grace', 'Judy'],
+  'recuperacao': ['Bob', 'Heidi'],
+  'reprovados': ['Charlie', 'Eve', 'Frank', 'Ivan']
+}
 '''
 classes = [{
     'materia': 'Lógica de programação - PY',
