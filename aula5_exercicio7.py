@@ -18,4 +18,10 @@ pessoas = {
 
 # Adição de uma nova chave 'idade' para cada pessoa, calculando a idade 
 # com base no ano de nascimento
-pessoas['Alice']['idade'] = 20
+ano_atual = 2026
+for nome, informacoes in pessoas.items():
+    ano_nascimento = informacoes['ano_nascimento']
+    idade = ano_atual - ano_nascimento
+    informacoes['idade'] = idade
+    
+print(pessoas)

@@ -23,4 +23,9 @@ Resultado esperado:
 frase = "Meu cachorro comeu o meu dever de casa"
 # Dicionário para armazenar a contagem de palavras
 contagem_palavras = {}
-contagem_palavras['m'] = 2
+for letra in frase.lower():
+    if letra in contagem_palavras:
+        contagem_palavras[letra] += 1
+    else:
+        contagem_palavras[letra] = 1
+print(contagem_palavras)

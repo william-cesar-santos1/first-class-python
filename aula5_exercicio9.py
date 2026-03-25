@@ -16,3 +16,9 @@ produtos = [
     {'categoria': 'Alimento', 'nome': 'Macarrão'}
 ]
 produtos_agrupados = {}
+for produto in produtos:
+    categoria = produto['categoria']
+    if categoria not in produtos_agrupados:
+        produtos_agrupados[categoria] = []
+    produtos_agrupados[categoria].append(produto['nome'])
+print(produtos_agrupados)

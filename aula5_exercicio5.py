@@ -11,3 +11,9 @@ A matriz de identidade de 4x4 é a seguinte:
 ]
 Utilize compreensão de listas para criar a matriz de identidade de 4x4.
 '''
+matriz_identidade = [[1 if linha == coluna else 0 
+                      for coluna in range(4)] 
+                     for linha in range(4)
+                    ]
+for linha in matriz_identidade:
+    print(linha)
