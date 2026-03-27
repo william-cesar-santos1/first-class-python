@@ -5,7 +5,8 @@ nome da função deve ser um verbo ou uma expressão verbal que
   com underline (_).
   
 def nome_funcao(parametros):
-    pass
+    conteudo da função
+    return valor_de_retorno
 '''
 
 # Declaração de uma função simples que imprime "Olá, mundo!"

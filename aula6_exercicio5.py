@@ -11,4 +11,3 @@ Charlie: 1
 Utilize uma função para realizar essa contagem e retorne um dicionário 
   onde as chaves são os nomes e os valores são as contagens correspondentes.
 '''
-nomes = ['Alice', 'Bob', 'Alice', 'Charlie', 'Bob', 'Alice', 'David', 'Charlie', 'Bob']
