@@ -13,3 +13,8 @@ while(numero is None):
     finally:
         # O bloco finally é sempre executado, independentemente de ter ocorrido uma exceção ou não.
         print("Fim da tentativa de entrada.")
+        
+if (numero == 0):
+    raise Exception("O número não pode ser zero.")
+
+print("Programa continua normalmente.")
