@@ -16,5 +16,10 @@ def ler_csv(caminho_do_arquivo_csv):
         conteudo = list(linhas)
     return conteudo
 
-conteudo = ler_csv('/Users/william/transacoes_bancarias.csv')
-print(conteudo)
+try:
+  conteudo = ler_csv('/Users/william/transacoes_bancarias.csv')
+  print(conteudo)
+except FileNotFoundError:
+  print(f"O arquivo não foi encontrado.")
+except Exception as e:
+  print(f"Ocorreu um erro: {e}")
