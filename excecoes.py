@@ -10,3 +10,6 @@ while(numero is None):
     except ValueError:
         # Se deu erro no bloco try, o programa vai executar o bloco except
         print("O valor digitado não é um número válido.")
+    finally:
+        # O bloco finally é sempre executado, independentemente de ter ocorrido uma exceção ou não.
+        print("Fim da tentativa de entrada.")
