@@ -9,8 +9,9 @@ Utilize o conceito de clousure(funções aninhadas) para criar um contador de
 
 def contador_de_chamadas():
     contador = 0
+    
     def incrementar_contador():
-        global contador
+        nonlocal contador
         contador += 1
         return contador
     
