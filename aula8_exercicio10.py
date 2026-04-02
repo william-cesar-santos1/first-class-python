@@ -16,3 +16,6 @@ clientes = [
         'rating': 'B',
     }
 ]
+filtrar_rating = lambda cliente: cliente['rating'] in ['A', 'AA']
+clientes_filtrados = filter(filtrar_rating, clientes)
+print(list(clientes_filtrados))
